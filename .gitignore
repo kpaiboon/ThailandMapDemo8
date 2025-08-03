@@ -1,0 +1,14 @@
+bin/
+obj/
+*.user
+*.suo
+*.vspscc
+*.vssscc
+.vs/
+*.dbmdl
+*.log
+*.DS_Store
+*.env
+node_modules/
+wwwroot/lib/
+appsettings.*.json
