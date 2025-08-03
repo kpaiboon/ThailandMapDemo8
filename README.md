@@ -76,4 +76,10 @@ ThailandMapDemo8/
 
 ## ติดต่อ/สอบถาม
 
+
 - เพิ่ม issue
+
+# TODOs
+
+- Try Fix "Clear button" ( **low-priority** )
+
