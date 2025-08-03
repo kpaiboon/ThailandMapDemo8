@@ -28,3 +28,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ghcr.io/${{ github.actor }}/thailandmapdemo8:latest
+          
