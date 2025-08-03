@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 5500  # เปิด port 5500 ใน container สำหรับ mapping กับ host
+# เปิด port 5500 ใน container สำหรับ mapping กับ host
+EXPOSE 5500  
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
@@ -11,7 +12,8 @@ RUN dotnet publish "ThailandMapDemo8/ThailandMapDemo8.csproj" -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-ENV ASPNETCORE_URLS=http://+:5500  # กำหนดให้ ASP.NET Core ฟังที่ port 5500 ใน container
+# กำหนดให้ ASP.NET Core ฟังที่ port 5500 ใน container
+ENV ASPNETCORE_URLS=http://+:5500  
 ENTRYPOINT ["dotnet", "ThailandMapDemo8.dll"]
 
 # วิธีรัน container และ map port:
