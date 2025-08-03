@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Application</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+        #mapContainer { height: 500px; width: 100%; border: 2px solid #ccc; margin: 20px 0; }
+        .controls { margin: 10px 0; }
+        .controls button, .controls select { margin: 5px; padding: 8px 15px; }
+        .map-switcher { margin: 10px 0; }
+        .map-switcher button { margin-right: 10px; padding: 5px 10px; }
+        .active-map { background-color: #007bff; color: white; }
+    </style>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://api.longdo.com/map/?key=@ViewBag.LongdoApiKey"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
