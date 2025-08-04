@@ -20,6 +20,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 // Configure to listen on all interfaces
-app.Urls.Add("http://0.0.0.0:80");
+app.Urls.Add("http://0.0.0.0:5000");
 
 app.Run();
