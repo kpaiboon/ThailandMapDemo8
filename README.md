@@ -53,8 +53,7 @@ docker run -p 5500:5500 thailandmapdemo8
 ### 6. CI/CD (ถ้ามี)
 
 - Workflow ตัวอย่างอยู่ที่ `.github/workflows/ci-cd.yml`
-- ต้องตั้งค่า Secrets สำหรับ DockerHub ใน GitHub Actions
-
+  
 ---
 
 ## โครงสร้างโปรเจกต์
@@ -76,4 +75,11 @@ ThailandMapDemo8/
 
 ## ติดต่อ/สอบถาม
 
+
 - เพิ่ม issue
+
+# TODOs
+
+- Try Fix "Clear button" ( **low-priority** )
+
+
